@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body>
+      <nav id="navbar">
+        <header>HTML documentation</header>
+        <ul>
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li>
+          <a class="nav-link" href="#Prerequisites">Prerequisites</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Guides">Guides</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Assessments">Assessments</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Headings_and_paragraphs">Headings and paragraphs</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Implementing_structural_hierarchy">Implementing structural hierarchy</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Why_do_we_need_structure">Why do we need structure</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Why_do_we_need_semantics"> Why do we need semantics</a>
+        </li>
+        <li><a class="nav-link" href="#Reference">Reference</a></li>
+      </ul>
+    </nav>        
+      <main id="main-doc">
+        <section class="main-section" id="Introduction">
+          <header>Introduction</header>
+          <article>
+            <p>
+              At its heart, <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML">HTML</a> is a language made up of <a href="https://developer.mozilla.org/en-US/docs/Glossary/Element">elements</a>, which can be applied to pieces of text to give them different meaning in a document (Is it a paragraph? Is it a bulleted list? Is it part of a table?), structure a document into logical sections (Does it have a header? Three columns of content? A navigation menu?), and embed content such as images and videos into a page. This module will introduce the first two of these and introduce fundamental concepts and syntax you need to know to understand HTML.
+            </p>
+          </article>
+        </section>
+        <section class="main-section" id="Prerequisites">
+          <header>Prerequisites</header>
+          <article>
+            <p>
+              Before starting this module, you don't need any previous HTML knowledge, but you should have at least basic familiarity with using computers and using the web passively (i.e., just looking at it and consuming content). You should have a basic work environment set up (as detailed in <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Installing_basic_software">Installing basic software</a>), and understand how to create and manage files (as detailed in <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Dealing_with_files">Dealing with files</a>). Both are parts of our <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web">Getting started with the web</a> complete beginner's module.
+            </p>
+          </article>
+        </section>
+        <section class= "main-section" id="Guides">
+          <header>Guides</header>
+          <article>
+            <p>This module contains the following articles, which will take you through all the basic theory of HTML and provide ample opportunity for you to test out some skills.</p>
+            <h4><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started">Getting started with HTML</a></h4>
+            <p>Covers the absolute basics of HTML, to get you started — we define elements, attributes, and other important terms, and show where they fit in the language. We also show how a typical HTML page is structured and how an HTML element is structured, and explain other important basic language features. Along the way, we'll play with some HTML to get you interested!</p>
+            <h4><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML">What's in the head? Metadata in HTML</a></h4>
+            <p>The <a href="https://developer.mozilla.org/en-US/docs/Glossary/Head">head</a> of an HTML document is the part that <strong>is not</strong> displayed in the web browser when the page is loaded. It contains information such as the page <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title"><i>title</i></a>, links to <a href="https://developer.mozilla.org/en-US/docs/Glossary/CSS">CSS</a> (if you want to style your HTML content with CSS), links to custom favicons, and metadata (data about the HTML, such as who wrote it, and important keywords that describe the document).</p>
+            <h4><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals">HTML text fundamentals</a></h4>
+            <p>One of HTML's main jobs is to give text meaning (also known as <a href="https://developer.mozilla.org/en-US/docs/Glossary/Semantics">semantics</a>), so that the browser knows how to display it correctly. This article looks at how to use HTML to break up a block of text into a structure of headings and paragraphs, add emphasis/importance to words, create lists, and more.</p>
+            <h4><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks">Creating hyperlinks</a></h4>
+            <p>Hyperlinks are really important — they are what makes the web a web. This article shows the syntax required to make a link and discusses best practices for links.</p>
+            <h4><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Advanced_text_formatting">Advanced text formatting</a></h4>
+            <p>There are many other elements in HTML for formatting text that we didn't get to in the <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals">HTML text fundamentals</a> article. The elements here are less well-known, but still useful to know about. In this article, you'll learn about marking up quotations, description lists, computer code and other related text, subscript and superscript, contact information, and more.</p>
+            <h4><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure">Document and website structure</a></h4>
+            <p>As well as defining individual parts of your page (such as "a paragraph" or "an image"), HTML is also used to define areas of your website (such as "the header", "the navigation menu", or "the main content column"). This article looks into how to plan a basic website structure and how to write the HTML to represent this structure.</p>
+            <h4><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Debugging_HTML">Debugging HTML</a></h4>
+            <p>Writing HTML is fine, but what if something goes wrong, and you can't work out where the error in the code is? This article will introduce you to some tools that can help.</p>
+          </article>
+        </section>
+        <section class="main-section" id="Assessments">
+          <header>Assessments</header>
+          <article>
+            <p>The following assessments will test your understanding of the HTML basics covered in the guides above.</p>
+            <h4><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Marking_up_a_letter">Marking up a letter</a></h4>
+          <p>We all learn to write a letter sooner or later; it is also a useful example to test out text formatting skills. In this assessment, you'll be given a letter to mark up.</p>
+          <h4><a href"https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Structuring_a_page_of_content">Structuring a page of content</a></h4>
+          <p>This assessment tests your ability to use HTML to structure a simple page of content, containing a header, a footer, a navigation menu, main content, and a sidebar.</p>
+        </article>
+      </section>
+      <section class="main-section" id="Headings_and_paragraphs">
+          <header>Headings and paragraphs</header>
+          <article>
+            <p>Most structured text consists of headings and paragraphs, whether you are reading a story, a newspaper, a college textbook, a magazine, etc.</p>
+            <img src="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals/newspaper_small.jpg" alt="newspaper">
+            <p>Structured content makes the reading experience easier and more enjoyable.</p>
+            <p>In HTML, each paragraph has to be wrapped in a <code> &lt;p&gt;</code> element, like so:</p>
+            <code class="code">&lt;p&gt; I am a paragraph, oh yes I am.&lt;p&gt;</code>
+            <p>Each heading has to be wrapped in a heading element:</p>
+            <code class="code">&lt;p&gt; I am the title of the story.&lt;p&gt;</code>
+      <p>There are six heading elements: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements">h1</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements">h2</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements">h3</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements">h4</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements">h5</a>, and <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements">h6</a>. Each element represents a different level of content in the document; <code> &lt;h1&gt;</code> represents the main heading, <code> &lt;h2&gt;</code> represents subheadings, <code> &lt;h3&gt;</code> represents sub-subheadings, and so on.</p>
+      </article>
+      </section>
+      <section class="main-section" id="Implementing_structural_hierarchy">
+          <header>Implementing structural hierarchy</header>
+          <article>
+            <p>For example, in this story, the <code>&lt;h1&gt;</code> element represents the title of the story, the <code>&lt;h2&gt;</code> elements represent the title of each chapter, and the <code>&lt;h3&gt;</code> elements represent sub-sections of each chapter:</p>
+            <code class="code">
+              <div> &lt;h1&gt; The Crushing Bore &lt;h1&gt; </div>
+<div> &lt;p&gt; By Chris Mills &lt;p&gt; </div>
+<div></div>
+<div> &lt;h2&gt; Chapter 1: The dark night &lt;h2&gt; </div>
+<div></div>
+<div> &lt;p&gt; It was a dark night. Somewhere, an owl hooted. The rain lashed down on the… &lt;p&gt; </div>
+<div></div>
+<div> &lt;h2&gt; Chapter 2: The eternal silence &lt;h2&gt; </div>
+<div></div>
+<div> &lt;p&gt; Our protagonist could not so much as a whisper out of the shadowy figure… &lt;p&gt; </div>
+<div></div>
+<div>&lt;h3&gt; The specter speaks &lt;h3&gt;</div>
+<div></div>
+<div>&lt;p&gt;
+  Several more hours had passed, when all of a sudden the specter sat bolt
+  upright and exclaimed, "Please have mercy on my soul!"
+&lt;p&gt;</div></code>
+<p>It's really up to you what the elements involved represent, as long as the hierarchy makes sense. You just need to bear in mind a few best practices as you create such structures:</p>
+<ul>
+  <li>Preferably, you should use a single <code>&lt;h1&gt</code>; per page—this is the top level heading, and all others sit below this in the hierarchy.</li>
+  <li>Make sure you use the headings in the correct order in the hierarchy. Don't use <code>&lt;h3&gt</code>; elements to represent subheadings, followed by <code>&lt;h2&gt</code>; elements to represent sub-subheadings—that doesn't make sense and will lead to weird results.</li>
+  <li>Of the six heading levels available, you should aim to use no more than three per page, unless you feel it is necessary. Documents with many levels (for example, a deep heading hierarchy) become unwieldy and difficult to navigate. On such occasions, it is advisable to spread the content over multiple pages if possible.</li>
+  </ul>
+  </article>
+      </section>
+      <section class="main-section" id="Why_do_we_need_structure">
+          <header>Why do we need structure</header>
+          <article>
+            <p>To answer this question, let's take a look at <a href="https://github.com/mdn/learning-area/blob/main/html/introduction-to-html/html-text-formatting/text-start.html">text-start.html</a> —the starting point of our running example for this article (a nice hummus recipe). You should save a copy of this file on your local machine, as you'll need it for the exercises later on. This document's body currently contains multiple pieces of content. They aren't marked up in any way, but they are separated with line breaks (Enter/Return pressed to go onto the next line).</p>
+
+<p>However, when you open the document in your browser, you'll see that the text appears as a big chunk!</p>
+<img src="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals/screen_shot_2017-03-29_at_09.20.35.png" alt="screenshot"/>
+<p>This is because there are no elements to give the content structure, so the browser does not know what is a heading and what is a paragraph. Furthermore:</p>
+<ul>
+  <li>Users looking at a web page tend to scan quickly to find relevant content, often just reading the headings, to begin with. (We usually <a href="https://www.nngroup.com/articles/how-long-do-users-stay-on-web-pages/">spend a very short time on a web page</a>.) If they can't see anything useful within a few seconds, they'll likely get frustrated and go somewhere else.</li>
+  <li>Search engines indexing your page consider the contents of headings as important keywords for influencing the page's search rankings. Without headings, your page will perform poorly in terms of <a href="https://developer.mozilla.org/en-US/docs/Glossary/SEO">SEO</a> (Search Engine Optimization).</li>
+  <li>Severely visually impaired people often don't read web pages; they listen to them instead. This is done with software called a <a href="https://en.wikipedia.org/wiki/Screen_reader">screen reader</a>. This software provides ways to get fast access to given text content. Among the various techniques used, they provide an outline of the document by reading out the headings, allowing their users to find the information they need quickly. If headings are not available, they will be forced to listen to the whole document read out loud.</li>
+  <li>To style content with <a href="https://developer.mozilla.org/en-US/docs/Glossary/CSS">CSS</a>, or make it do interesting things with <a href="https://developer.mozilla.org/en-US/docs/Glossary/JavaScript">JavaScript</a>, you need to have elements wrapping the relevant content, so CSS/JavaScript can effectively target it.</li>
+  </ul>
+  <p>Therefore, we need to give our content structural markup.</p>
+  </article>
+      </section>
+      <section class="main-section" id="Why_do_we_need_semantics">
+          <header>Why do we need semantics</header>
+          <article>
+            <p>Semantics are relied on everywhere around us—we rely on previous experience to tell us what the function of an everyday object is; when we see something, we know what its function will be. So, for example, we expect a red traffic light to mean "stop," and a green traffic light to mean "go." Things can get tricky very quickly if the wrong semantics are applied. (Do any countries use red to mean "go"? We hope not.)</p>
+            <p>In a similar way, we need to make sure we are using the correct elements, giving our content the correct meaning, function, or appearance. In this context, the h1 element is also a semantic element, which gives the text it wraps around the role (or meaning) of "a top level heading on your page."</p>
+            <code class="code">&lt;h1&gt; This is a top level heading &lt;h1&gt;</code>
+            <p>By default, the browser will give it a large font size to make it look like a heading (although you could style it to look like anything you wanted using CSS). More importantly, its semantic value will be used in multiple ways, for example by search engines and screen readers (as mentioned above).</p>
+            <p>On the other hand, you could make any element <i>look</i> like a top level heading. Consider the following:</p>
+            <code class="code">
+              <div>&lt;span&gt; style="font-size: 32px; margin: 21px 0; display: block;"></div>
+              <div>Is this a top level heading?</div>
+              <div>&lt;span&gt;</div>
+            </code>
+            <p>This is a <code>&lt;span&gt;</code> element. It has no semantics. You use it to wrap content when you want to apply CSS to it (or do something to it with JavaScript) without giving it any extra meaning. (You'll find out more about these later on in the course.) We've applied some CSS to it to make it look like a top level heading, but since it has no semantic value, it will not get any of the extra benefits described above. It is a good idea to use the relevant HTML element for the job.</p>
+            </article>
+      </section>
+      <section class="main-section" id="Reference">
+          <header>Reference</header>
+        <article>
+          <ul>
+            <li>
+              All the documentation in this page is taken from
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Learn/HTML"
+                target="_blank"
+                >MDN</a
+              >. Feel free to learn some more on their website!
+            </li>
+          </ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
+
+
