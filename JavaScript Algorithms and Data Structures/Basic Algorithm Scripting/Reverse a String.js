@@ -16,8 +16,8 @@ function reverseString(str) {
     var newString = "";
  
     // Step 2. Create the FOR loop
-    for (var i = str.length - 1; i >= 0; i--) { 
-        newString += str[i];
+    for (var x = str.length - 1; x >= 0; x--) { 
+        newString += str[x];
     }
  
     // Step 3. Return the reversed string
