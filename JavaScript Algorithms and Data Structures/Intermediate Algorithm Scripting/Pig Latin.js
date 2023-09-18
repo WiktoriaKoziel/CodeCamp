@@ -7,7 +7,15 @@ Pig Latin is a way of altering English Words. The rules are as follows:
 
 Translate the provided string to Pig Latin. Input strings are guaranteed to be English words in all lowercase.
 
-#solution
+#1solution - Regex
+function translatePigLatin(str) {
+  if (str.match(/^[aeiou]/)) return str + "way"; //if str starts with vowel return str + "way"
+//if it doesn't build a string which contains every consonant before the first vowel in the provided string
+  const consonantCluster = str.match(/^[^aeiou]+/)[0]; 
+  return str.substring(consonantCluster.length) + consonantCluster + "ay";
+}
+
+#2solution - step-by-step approach
 function toPigLatin(str) {
   // Define an array of vowels
   const vowels = ['a', 'e', 'i', 'o', 'u'];
