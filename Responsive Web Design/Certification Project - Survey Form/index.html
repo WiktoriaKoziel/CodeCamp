@@ -1,206 +1,160 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8">
-    <title>freeCodeCamp Survey Form</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css"/>
   </head>
   <body>
-    <div>
-    <header class="header">
-     <h1 id="title" class="text-center">freeCodeCamp Survey Form</h1>
-     <p id="description" class="description text-center">
-      Thank you for taking the time to help us improve the platform
-     </p>
-    </header>
-    <form id="survey-form">
-      <div class="form-group">
-        <label id="name-label">Name</label>
-        <input 
-        id="name" 
-        type="text" 
-        name="name" 
-        class="form-control"
-        placeholder="Enter your name" 
-        required 
-        />
-      </div>
-      <div class="form-group">
-        <label id="email-label">Email</label>
-        <input 
-        id="email" 
-        name="email" 
-        type="email" 
-        class="form-control"
-        placeholder="Enter your Email" 
-        required 
-        />
-      </div>
-      <div class="form-group">
-        <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
-        <input 
-        id="number" 
-        type="number" 
-        name="age" 
-        min="10" 
-        max="99"
-        class="form-control" 
-        placeholder="Age" 
-        />
-      </div>
-      <div class="form-group">
-        <p>Which option best describes your current role? </p>
-          <select id="dropdown" name="role" class="form-control" required>
-            <option disabled selected value>Select current role</option>
-            <option value="student">Student</option>
-            <option value="job">Full Time Job</option>
-            <option value="learner">Full Time Learner</option>
-            <option value="perferNo">Prefer not to say</option>
-            <option value="other">Other</option>
-          </select>
-      </div>
-      <div class="form-group">
-        <p>Would you recommend freeCodeCamp to a friend? </p>
-        <label>
-          <input 
-          type="radio"
-          value="definetely" 
-          name="recommend" 
-          class="input-radio"
-          checked 
-          /> Definetely
-        </label>
-        <label>
-          <input 
-          value="maybe" 
-          type="radio" 
-          name="recommend" 
-          class="input-radio"
-          /> Maybe
-        </label>
-        <label>
-          <input 
-          value="not-sure" 
-          type="radio" 
-          name="recommend" 
-          class="input-radio" 
-          /> Not sure
-        </label>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">Patient Satisfaction Survey</h1>
+        <p id="description" class="description text-center">
+          Please let us know about your experience with our product and service.
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
         </div>
         <div class="form-group">
-         <p> What is your favorite feature of freeCodeCamp? </p>
-          <select id="most-like" name="mostLike" class="form-control" required>
-            <option disabled selected value>Select an option</option>
-            <option value="challenges">Challenges</option>
-            <option value="projects">Projects</option>
-            <option value="community">Community</option>
-            <option value="openSource">Open Source</option>
-          </select>
-        </div> 
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
         <div class="form-group">
-          <p>What would you like to see improved? (Check all that apply)
+          <label id="number-label" for="number"
+            >Age<span class="clue">(optional)</span></label>
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Age"
+          />
+        </div>
+        <div class="form-group">
+          <p>Is this your first time in our facility?</p>
+          <label>
+            <input
+              name="visit"
+              value="yes"
+              type="radio"
+              class="input-radio"
+              checked
+            />Yes</label>
+          <label>
+            <input
+              name="visit"
+              value="no"
+              type="radio"
+              class="input-radio"
+            />No</label>
+        </div>
+        <div class="form-group">
+          <p>How frequently do you visit our facility?</p>
+          <select id="dropdown" name="frequency" class="form-control" required>
+            <option disabled selected value>Select</option>
+            <option value="weekly">Weekly or more</option>
+            <option value="monthly">Monthly</option>
+            <option value="quarterly">Quarterly</option>
+            <option value="less">Less than quartely</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>Has the doctor passed the appointment schedule?</p>
+          <label>
+            <input
+              name="time"
+              value="yes"
+              type="radio"
+              class="input-radio"
+              checked
+            />Yes</label>
+          <label>
+            <input
+              name="time"
+              value="no"
+              type="radio"
+              class="input-radio"
+            />No</label>
+        </div>
+        <div class="form-group">
+          <p>How long did you need to wait for the appointment? (past the appointment time)</p>
+          <select id="wait" name="wait" class="form-control" required>
+            <option disabled selected value>Select an option</option>
+            <option value="less30">Less than 30 min</option>
+            <option value="30-45">30 min - 45 min</option>
+            <option value="45-60">45 min - 60 min</option>
+            <option value="more60">More than 60 min</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>
+            What would you like to see improved?
             <span class="clue">(Check all that apply)</span>
           </p>
-        <label> 
-          <input 
-          value="front-end-projects" 
-          type="checkbox" 
-          name="prefer"
-          class="input-checkbox" 
-          /> Front-end Projects
-        </label>
-        <label> 
-          <input 
-          value="back-end-projects" 
-          type="checkbox" 
-          name="prefer"
-          class="input-checkbox" 
-          /> Back-end Projects
-        </label>
-        <label> 
-          <input 
-          value="data-visualization" 
-          type="checkbox" 
-          name="prefer"
-          class="input-checkbox" 
-          /> Data Visualization
-        </label>
-        <label> 
-          <input 
-          value="challenges" 
-          type="checkbox" 
-          name="prefer"
-          class="input-checkbox" 
-          /> Challenges
-        </label>
-        <label> 
-          <input 
-          value="open-source-community" 
-          type="checkbox" 
-          name="prefer"
-          class="input-checkbox" 
-          /> Open Source Community
-        </label>
-        <label> 
-          <input 
-          value="gitter-help-rooms" 
-          type="checkbox" 
-          name="prefer"
-          class="input-checkbox" 
-          /> Gitter help rooms
-        </label>
-        <label> 
-          <input 
-          value="videos" 
-          type="checkbox" 
-          name="prefer"
-          class="input-checkbox" 
-          /> Videos
-        </label>
-        <label> 
-          <input 
-          value="city-meetups" 
-          type="checkbox" 
-          name="prefer"
-          class="input-checkbox"
-          /> City Meetups
-        </label>
-        <label> 
-          <input 
-          value="wiki" 
-          type="checkbox" 
-          name="prefer"
-          class="input-checkbox"
-          /> Wiki
-        </label>
-        <label> 
-          <input 
-          value="forum" 
-          type="checkbox" 
-          name="prefer"
-          class="input-checkbox" 
-          /> Forum
-        </label>
-        <label> 
-          <input 
-          value="additional-courses" 
-          type="checkbox" 
-          name="prefer"
-          class="input-checkbox"
-          /> Additional Courses
-        </label>
+          <label>
+            <input
+              name="prefer"
+              value="Professionalism"
+              type="checkbox"
+              class="input-checkbox"
+            />Professionalism of staff</label>
+          <label>
+            <input
+              name="prefer"
+              value="hygiene"
+              type="checkbox"
+              class="input-checkbox"
+            />Hygiene in the facility</label>
+          <label
+            ><input
+              name="prefer"
+              value="kindness"
+              type="checkbox"
+              class="input-checkbox"
+            />Kindness of medical personnel</label>
+          <label
+            ><input
+              name="prefer"
+              value="care"
+              type="checkbox"
+              class="input-checkbox"
+            />Care provided by the doctor</label>
+          <label
+            ><input
+              name="prefer"
+              value="Co-ordination"
+              type="checkbox"
+              class="input-checkbox"
+            />Co-ordination between departments</label>
         </div>
         <div class="form-group">
-        <p>Any comments or suggestions? </p>
-          <textarea 
-          id="comments" 
-          name="comment" 
-          class="input-area"
-          placeholder="Enter your comment here..."
+          <p>Please share any comments/suggestions</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
           ></textarea>
-      </div>
-      <div class="form-group">
-        <button type="submit" id="submit" class="submit-button">
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
             Submit
           </button>
         </div>
