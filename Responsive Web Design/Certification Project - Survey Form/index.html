@@ -1,164 +1,170 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
   </head>
   <body>
-    <div class="container">
-      <header class="header">
-        <h1 id="title" class="text-center">Patient Satisfaction Survey</h1>
-        <p id="description" class="description text-center">
-          Please let us know about your experience with our product and service.
-        </p>
-      </header>
-      <form id="survey-form">
-        <div class="form-group">
-          <label id="name-label" for="name">Name</label>
-          <input
-            type="text"
-            name="name"
-            id="name"
-            class="form-control"
-            placeholder="Enter your name"
-            required
+    <nav id="navbar" class="nav">
+      <ul class="nav-list">
+        <li>
+          <a href="#welcome-section">About</a>
+        </li>
+        <li>
+          <a href="#projects">Work</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <section id="welcome-section" class="welcome-section">
+      <h1>Hey, I am Wiktoria</h1>
+      <p>an aspiring web developer</p>
+    </section>
+    <section id="projects" class="projects-section">
+      <h2 class="projects-section-header">These are some of my projects</h2>
+      <div class="projects-grid">
+        <a
+          href="https://github.com/WiktoriaKoziel/CodeCamp/tree/main/Responsive%20Web%20Design/Certification%20Project%20-%20Build%20a%20tribute%20Page"
+          target="_blank"
+          class="project project-tile"
+        >
+          <img           class="project-image"
+            src="https://github.com/WiktoriaKoziel/CodeCamp/blob/main/Responsive%20Web%20Design/Certification%20Project%20-%20Build%20a%20tribute%20Page/tribute.jpg?raw=true"
+            alt="project"
           />
-        </div>
-        <div class="form-group">
-          <label id="email-label" for="email">Email</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            class="form-control"
-            placeholder="Enter your Email"
-            required
-          />
-        </div>
-        <div class="form-group">
-          <label id="number-label" for="number"
-            >Age<span class="clue">(optional)</span></label>
-          <input
-            type="number"
-            name="age"
-            id="number"
-            min="10"
-            max="99"
-            class="form-control"
-            placeholder="Age"
-          />
-        </div>
-        <div class="form-group">
-          <p>Is this your first time in our facility?</p>
-          <label>
-            <input
-              name="visit"
-              value="yes"
-              type="radio"
-              class="input-radio"
-              checked
-            />Yes</label>
-          <label>
-            <input
-              name="visit"
-              value="no"
-              type="radio"
-              class="input-radio"
-            />No</label>
-        </div>
-        <div class="form-group">
-          <p>How frequently do you visit our facility?</p>
-          <select id="dropdown" name="frequency" class="form-control" required>
-            <option disabled selected value>Select</option>
-            <option value="weekly">Weekly or more</option>
-            <option value="monthly">Monthly</option>
-            <option value="quarterly">Quarterly</option>
-            <option value="less">Less than quartely</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <p>Has the doctor passed the appointment schedule?</p>
-          <label>
-            <input
-              name="time"
-              value="yes"
-              type="radio"
-              class="input-radio"
-              checked
-            />Yes</label>
-          <label>
-            <input
-              name="time"
-              value="no"
-              type="radio"
-              class="input-radio"
-            />No</label>
-        </div>
-        <div class="form-group">
-          <p>How long did you need to wait for the appointment? (past the appointment time)</p>
-          <select id="wait" name="wait" class="form-control" required>
-            <option disabled selected value>Select an option</option>
-            <option value="less30">Less than 30 min</option>
-            <option value="30-45">30 min - 45 min</option>
-            <option value="45-60">45 min - 60 min</option>
-            <option value="more60">More than 60 min</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <p>
-            What would you like to see improved?
-            <span class="clue">(Check all that apply)</span>
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            Chopin's Tribute Page
+            <span class="code">&#47;&gt;</span>
           </p>
-          <label>
-            <input
-              name="prefer"
-              value="Professionalism"
-              type="checkbox"
-              class="input-checkbox"
-            />Professionalism of staff</label>
-          <label>
-            <input
-              name="prefer"
-              value="hygiene"
-              type="checkbox"
-              class="input-checkbox"
-            />Hygiene in the facility</label>
-          <label
-            ><input
-              name="prefer"
-              value="kindness"
-              type="checkbox"
-              class="input-checkbox"
-            />Kindness of medical personnel</label>
-          <label
-            ><input
-              name="prefer"
-              value="care"
-              type="checkbox"
-              class="input-checkbox"
-            />Care provided by the doctor</label>
-          <label
-            ><input
-              name="prefer"
-              value="Co-ordination"
-              type="checkbox"
-              class="input-checkbox"
-            />Co-ordination between departments</label>
-        </div>
-        <div class="form-group">
-          <p>Please share any comments/suggestions</p>
-          <textarea
-            id="comments"
-            class="input-textarea"
-            name="comment"
-            placeholder="Enter your comment here..."
-          ></textarea>
-        </div>
-        <div class="form-group">
-          <button type="submit" id="submit" class="submit-button">
-            Submit
-          </button>
-        </div>
-      </form>
-    </div>
-  </body>
+        </a>
+        <a
+          href="https://github.com/WiktoriaKoziel/CodeCamp/tree/main/Responsive%20Web%20Design/Certification%20Project%20-%20Product%20Landing%20Page"
+          target="_blank"
+          class="project project-tile"
+        >
+          <img         class="project-image"
+            src="https://github.com/WiktoriaKoziel/CodeCamp/blob/main/Responsive%20Web%20Design/Certification%20Project%20-%20Product%20Landing%20Page/landing%20page.jpg?raw=true"
+            alt="project"
+          />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            AirPods Max Landing Page
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
+        <a
+          href="https://github.com/WiktoriaKoziel/CodeCamp/tree/main/Responsive%20Web%20Design/Certification%20Project%20-%20Technical%20Documentation%20Page"
+          target="_blank"
+          class="project project-tile"
+        >
+          <img         class="project-image"
+            src="https://github.com/WiktoriaKoziel/CodeCamp/blob/main/Responsive%20Web%20Design/Certification%20Project%20-%20Technical%20Documentation%20Page/technical%20documentation.jpg?raw=true"
+            alt="project"
+          />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            HTML - Technical Documentation Page
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
+        <a
+          href="https://github.com/WiktoriaKoziel/CodeCamp/tree/main/Responsive%20Web%20Design/Certification%20Project%20-%20Survey%20Form"
+          target="_blank"
+          class="project project-tile"
+        >
+          <img
+            class="project-image"
+            src="https://github.com/WiktoriaKoziel/CodeCamp/blob/main/Responsive%20Web%20Design/Certification%20Project%20-%20Survey%20Form/survey.png?raw=true"
+            alt="project"
+          />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            Survey Form
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
+        <a
+          href="https://github.com/WiktoriaKoziel/CodeCamp/tree/main/Responsive%20Web%20Design/Nutrition%20Label"
+          target="_blank"
+          class="project project-tile"
+        >
+          <img
+            class="project-image"
+            src="https://github.com/WiktoriaKoziel/CodeCamp/blob/main/Responsive%20Web%20Design/Nutrition%20Label/Nutrition%20Label.png?raw=true"
+            alt="project"
+          />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            Nutrition Label
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
+        <a
+          href="https://github.com/WiktoriaKoziel/CodeCamp/tree/main/Responsive%20Web%20Design/Penguin%20-%20CSS%20Transforms"
+          target="_blank"
+          class="project project-tile"
+        >
+          <img
+            class="project-image"
+            src="https://github.com/WiktoriaKoziel/CodeCamp/blob/main/Responsive%20Web%20Design/Penguin%20-%20CSS%20Transforms/Pinguin.png?raw=true"
+            alt="project"
+          />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            Waveing Pinguin
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
+      </div>
+      <a
+        href="https://github.com/WiktoriaKoziel/CodeCamp/tree/main"
+        class="btn btn-show-all"
+        target="_blank"
+        >Show all</a>
+    </section>
+    <section id="contact" class="contact-section">
+      <div class="contact-section-header">
+        <h2>Let's work together!</h2>
+      </div>
+      <div class="contact-links">
+        <a
+          href="https://www.linkedin.com/in/wiktoriakoziel/"
+          target="_blank"
+          class="btn contact-details"
+          ><i class="fab fa-linkedin"></i> Linkedin</a
+        >
+        <a
+          id="profile-link"
+          href="https://github.com/WiktoriaKoziel"
+          target="_blank"
+          class="btn contact-details"
+          ><i class="fab fa-github"></i> GitHub</a
+        >
+        <a
+          href="https://www.facebook.com/kiktoria.woziel"
+          target="_blank"
+          class="btn contact-details"
+          ><i class="fab fa-facebook-square"></i> Facebook</a
+        >
+        <a href="mailto:wiktoria.koziel@gmail.com" class="btn contact-details"><i class="fas fa-at"></i> Send a mail</a
+        >
+        <a href="tel:606-361-171" class="btn contact-details"
+          ><i class="fas fa-mobile-alt"></i> Call me</a
+        >
+      </div>
+    </section>
+    <footer>
+      <p>
+        &copy; This Portfolio was created as Project for
+        <a href="https://www.freecodecamp.com/" target="_blank"
+          >freeCodeCamp </a>
+      </p>
+    </footer>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
 </html>
